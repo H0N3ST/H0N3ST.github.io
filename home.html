@@ -53,14 +53,14 @@
         const txt = `<a href="${svioglasi[i].properties.link}">${svioglasi[i].properties.naslov}</a><p>Cijena: ${svioglasi[i].properties.cijena}<br>
         Povrsina: ${svioglasi[i].properties.povrsina}<br>
         Cijena m2: ${svioglasi[i].properties.cijenam2} &#8364;<br>
-        Ocijena: ????</p>`;
+        Ocjena: ????</p>`;
         marker.bindPopup(txt);
         } else if (lat !== "null" && lon !== "null" && tocnaLokacija === false) {
         var markerBlizu = L.marker([lat, lon], {icon: orangeIcon}); 
         const txt = `<a href="${svioglasi[i].properties.link}">${svioglasi[i].properties.naslov}</a><p>Cijena: ${svioglasi[i].properties.cijena}<br>
         Povrsina: ${svioglasi[i].properties.povrsina}<br>
         Cijena m2: ${svioglasi[i].properties.cijenam2} &#8364;<br>
-        Ocijena: ????</p>`;
+        Ocjena: ????</p>`;
         markerBlizu.bindPopup(txt);
         markeriBlizu.addLayer(markerBlizu)    
         }
